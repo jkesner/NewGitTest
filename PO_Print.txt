@@ -1,13 +1,22 @@
 This is Jennmar Production Code.
 
 !! Spacing Fix
+! JFK Start Peru
 
 IF (#COST_CENTER = "02")
 
 	GOTO USA_FORM
 
+ELSE IF(#COST_CENTER = "93")
+
+	GOTO PERU_FORM
+	
 END_IF
 
 USA_FORM
+
+END_FORM
+
+PERU_FORM
 
 END_FORM
